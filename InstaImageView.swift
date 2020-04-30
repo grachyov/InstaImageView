@@ -53,6 +53,7 @@ class InstaImageView: UIImageView {
         
         let frame = convert(bounds, to: window)
         let zoomingImageView = UIImageView(frame: frame)
+        zoomingImageView.contentMode = contentMode
         zoomingImageView.image = image
         image = nil
         zoomingImageView.isUserInteractionEnabled = true
